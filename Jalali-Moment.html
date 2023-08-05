@@ -7,11 +7,11 @@
 </head>
 <body>
     <script>
-        const a = moment().format("YYYY/M/D"); 
+        var a = moment().format("YYYY/M/D"); 
         console.log(a);// 2022/3/29
-        const b = moment().locale("fa").format("YYYY/M/D");
+        var b = moment().locale("fa").format("YYYY/M/D");
         console.log(b); //1401/1/9
-        const c = moment().locale("fa").format("dddd");
+        var c = moment().locale("fa").format("dddd");
         console.log(c); //سه‌شنبه
         c.format('YYYY/M/D');// 1401/1/9
         c.format('MM'); // 01
@@ -19,9 +19,10 @@
         c.format('DD'); //چند روز از ماه گذشته است ؟ 9
         c.format('DDD'); // چند روز از سال گذشته است ؟ 9
         c.format('w'); // در هفته دوم هستیم پس خروجی : 2
-        const d = moment("2022/03/29", "YYYY/MM/DD").locale("fa").fromNow();
-        const e = moment().locale("fa").startOf("day").fromNow();
-console.log(m);
+        var d = moment("2022/03/29", "YYYY/MM/DD").locale("fa").fromNow();
+        console.log(d);
+        var e = moment().locale("fa").startOf("day").fromNow();
+        console.log(e);
     </script>
 </body>
 </html>
